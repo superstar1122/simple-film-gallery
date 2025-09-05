@@ -1,2 +1,2 @@
-# MovieWebsite
-CodeCanyon Project
+# Simple Film Gallery
+
