@@ -1,0 +1,235 @@
+/* Google Fonts: Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+::selection{
+    background-color:#1a191f;
+    color: #fff;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #1a191f;
+}
+header {
+    padding: 2rem 9%;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navbar Section Starts  */
+
+.header{
+    padding: 3rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+    background-color: #000;
+    z-index: 100;
+}
+
+
+.header .navbar{
+    z-index: 100;
+}
+
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300; 
+}
+
+
+#menu-btn{
+    padding: 1rem 1.5rem;
+    background-color: #1a191f;
+    font-size: 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+}
+
+
+
+/* Media Queries */
+
+
+
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    
+}
+
+@media (max-width: 768px){
+    #menu-btn{
+        display: initial;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 15%;
+        right: 2rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        border-radius: .5rem;
+        border: 2px solid #f9ab00;
+        background-color: #1a191f;
+        height: 25rem;
+        box-shadow: .5rem .5rem  0 #f9ab00;
+        transform: scale(0);
+        transform-origin: top right;
+        transition: 0.2s linear;
+    }
+
+    .header .navbar.active{
+        transform: scale(1);
+        
+    }
+
+    .header .navbar a{
+        margin: 4rem;
+        text-align: left;
+        display: block;
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+
+/* Navbar Section Ends  */
+
+/* home section starts  */
+.home{
+    height: 95vh;   
+}
+
+
+.home .owl-carousel #list1{
+    background: rgba(0,0,0,0.7) url(https://images3.alphacoders.com/692/thumbbig-692439.webp);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+.home .owl-carousel #list2{
+    background: rgba(0,0,0,0.7) url(..//img/SpiderMan-Wallpaper.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+.home .owl-carousel #list3{
+    background: rgba(0,0,0,0.7) url(..//img/Venom-Wallpaper.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+.home .owl-carousel #list4{
+    background: rgba(0,0,0,0.7) url(..//img/Endgame-Wallpaper.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.home .owl-carousel .item{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 5rem;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 95vh;
+    padding: 0rem 9%; 
+}
+
+.home .owl-carousel .item .image{
+    flex: 1 1 45rem;
+}
+.home .owl-carousel .item .image img{
+    width: 285px;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+.home .owl-carousel .item .content{
+    flex: 1 1 45rem;
+    /* padding-left: 20rem; */
+}
+
+.home .owl-carousel .item .content h1{
+    font-size: 4.5rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.home .owl-carousel .item .content p{
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    max-width: 50rem;
+    padding-bottom: 3rem;
+}
+.home .owl-carousel .item .content .home-btn1{
+    padding: 1rem 3rem;
+    background-color: hsl(0, 94%, 66%);
+    color: #fff;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    transition: 0.2s linear;
+}
+.home .owl-carousel .item .content .home-btn1:hover{
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+.home .owl-carousel .item .content .home-btn2{
+    border: 2px solid #fff;
+    padding: 1rem 4rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+
+
+
+/* home section ends  */
+
+
